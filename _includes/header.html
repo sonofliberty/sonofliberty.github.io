@@ -1,5 +1,5 @@
 <header id="header">
-    <a href="/">
+    <a href="{{ "/"|relative_url }}">
         <img src="{{ "/img/alex.png" | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ site.description }}">
         {% if page.title %}
             <div class="h1">{{ site.title }}</div>

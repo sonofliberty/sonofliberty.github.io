@@ -1,6 +1,6 @@
 <header id="header">
-    <a href="{{ site.baseurl }}">
-        <img src="{{ "/img/alex.png" | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ site.description }}">
+    <a href="{{ "/"|relative_url }}">
+        <img src="{{ "/img/alex.png"|relative_url }}" alt="{{ site.description }}">
         {% if page.title %}
             <div class="h1">{{ site.title }}</div>
         {% else %}

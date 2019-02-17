@@ -9,7 +9,17 @@ a {
 }
 
 #wrap {
-  min-height: 640px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+
+  #page {
+    img {
+      -webkit-box-shadow: 0px 5px 22px -9px #000000;
+      box-shadow: 0px 5px 22px -9px #000000;
+    }
+  }
 }
 
 #header {
@@ -17,20 +27,29 @@ a {
     font-family: 'Signika', sans-serif; //Emerald logo font
     font-weight: 600;
   }
-  #social {
-    li {
-      display:inline;
-      a {
-        color: $sonofliberty-green;
-      }
-    }
+}
+
+#social {
+  li {
+    display:inline;
   }
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 730px;
+  padding: 0 1.5rem;
+}
+
 #footer {
-  margin-top: 80px;
-  color: $sonofliberty-green;
-  background-color: $background-color;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  margin-top: 64px;
+  color: $background-color;
+  background-color: $sonofliberty-green;
+  a {
+    color: white;
+  }
 }
 
 .github-corner {

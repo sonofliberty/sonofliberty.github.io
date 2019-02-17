@@ -1,5 +1,33 @@
 <header id="header">
-
-	<!-- Your custom header here -->
-	
+    <a href="{{ site.baseurl }}">
+        <img src="{{ "/img/alex.png" | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ site.description }}">
+        {% if page.title %}
+            <div class="h1">{{ site.title }}</div>
+        {% else %}
+            <h1>{{ site.title }}</h1>
+        {% endif %}
+    </a>
+    <br>
+    <ul id="social">
+        {% if site.social.github %}
+            <li>
+                <a href="https://github.com/{{ site.social.github }}" target="_blank"><i class="fab fa-github-square fa-fw"></i></a>
+            </li>
+        {% endif %}
+        {% if site.social.linkedin %}
+            <li>
+                <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" target="_blank"><i class="fab fa-linkedin fa-fw"></i></a>
+            </li>
+        {% endif %}
+        {% if site.social.facebook %}
+            <li>
+                <a href="https://www.facebook.com/{{ site.social.facebook }}" target="_blank"><i class="fab fa-facebook-square fa-fw"></i></a>
+            </li>
+        {% endif %}
+        {% if site.social.email %}
+            <li>
+                <a href="mailto:{{ site.social.email }}"><i class="fas fa-envelope-square fa-fw"></i></a>
+            </li>
+        {% endif %}
+    </ul>
 </header>

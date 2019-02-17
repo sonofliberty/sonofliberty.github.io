@@ -1,18 +1,24 @@
 # Site settings
 title: Alex Winter
 description: A minimal personal site
-url: "http://www.jacoporabolini.com/emerald"
+url: https://sonofliberty.github.io
+github_url: https://github.com/sonofliberty/sonofliberty.github.io
 author:
   name: Aleksander Winter
   email: aleksander.winter.89@gmail.com
   url: sonofliberty.github.io
+social:
+  github: sonofliberty
+  linkedin: alexwinter89
+  facebook: aleksander.winter.790
+  email: aleksander.winter.89@gmail.com
 
 # Build settings
-baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
+baseurl: /
 markdown: kramdown
 source: .
 destination: ./_site
-permalink: /:title
+permalink: /:year/:title/
 paginate: 8
 paginate_path: /page:num/
 
@@ -24,6 +30,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      og_type: article
 
 # Plugins
 plugins:
@@ -33,6 +40,6 @@ plugins:
 version: "1.1.0"
 
 # Options
-custom_header: false
-custom_nav_footer: false
+custom_header: true
+custom_nav_footer: true
 reverse: false

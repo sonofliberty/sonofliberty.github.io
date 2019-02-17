@@ -2,7 +2,7 @@
 
 /* Navigation */
 
-#nav, #nav-left { 
+#nav, #nav-left {
   a {
     display: block;
     color: $background-color;
@@ -12,13 +12,15 @@
     @media (min-width: 940px) {
       font-size: 1em;
     }
+
     &:hover {
       background-color: lighten($main-color, 5%);
     }
   }
+
   span {
-      font-weight: 200;
-    }
+    font-weight: 200;
+  }
 }
 
 #nav {
@@ -65,6 +67,7 @@
   width: 1.5em;
   background-color: lighten($text-color, 35%);
   margin-top: 8px;
+
   &:after, &:before {
     content: "";
     display: block;
@@ -74,29 +77,34 @@
     background-color: lighten($text-color, 35%);
     transition: all 0.3s ease-in;
   }
+
   &:before {
     top: -8px;
   }
+
   &:after {
     top: 4px;
   }
+
   &.btn-close {
     background: none;
   }
+
   &.btn-close:before {
     top: 0;
     -webkit-transform: rotate(-45deg);
-       -moz-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
     background-color: $background-color;
   }
+
   &.btn-close:after {
     top: -4px;
     -webkit-transform: rotate(45deg);
-       -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
     background-color: $background-color;
   }
 }
@@ -112,31 +120,35 @@
 }
 
 #container {
-	margin:0 auto;
-	max-width: 730px;
-	padding: 0 1.5rem;
+  margin: 0 auto;
+  max-width: 730px;
+  padding: 0 1.5rem;
 }
 
 #header {
-	text-align: center;
+  text-align: center;
   padding: 24px 0;
   position: relative;
+
   a {
-  	text-decoration: none;
-  	color: $text-color;
-  	display: inline-block;
+    text-decoration: none;
+    color: $text-color;
+    display: inline-block;
   }
+
   img {
-  	max-height: 72px;
-  	margin: 0 auto;
-  	display: block;
+    max-height: 72px;
+    margin: 0 auto;
+    display: block;
   }
+
   h1 {
-  	font-family: 'Signika', sans-serif; //Emerald logo font
+    font-family: 'Signika', sans-serif; //Emerald logo font
     font-weight: 600;
   }
+
   &:after {
-  	display: block;
+    display: block;
     content: '';
     width: 5rem;
     height: 1px;
@@ -156,18 +168,18 @@
 #post-page {
   margin-bottom: 1.5em;
   @media (min-width: 940px) {
-      margin-bottom: 1.3334em;
-    }
+    margin-bottom: 1.3334em;
+  }
 }
 
-.post+.post:before {
-    display: block;
-    content: '';
-    width: 5rem;
-    height: 1px;
-    margin: 23px auto;
-    background-color: lighten($text-color, 70%);
-  }
+.post + .post:before {
+  display: block;
+  content: '';
+  width: 5rem;
+  height: 1px;
+  margin: 23px auto;
+  background-color: lighten($text-color, 70%);
+}
 
 .by-line {
   display: block;
@@ -190,14 +202,14 @@ img {
   margin: 0 auto;
   margin-bottom: 24px;
   -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-      -ms-border-radius: 4px;
-          border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
 }
 
 img[title="Emerald"] {
-    box-shadow: 0 2px 6px #ddd;
-  }
+  box-shadow: 0 2px 6px #ddd;
+}
 
 code {
   color: lighten($text-color, 35%);
@@ -225,14 +237,17 @@ code {
 .pagination {
   text-align: center;
   margin: 2.666668em;
+
   span {
     background-color: darken($background-color, 5%);
     color: $text-color;
   }
+
   a:hover {
     background-color: lighten($main-color, 5%);
   }
 }
+
 .page-item {
   background-color: $main-color;
   color: $background-color;
@@ -240,9 +255,9 @@ code {
   font-weight: 400;
   padding: 0.5em 1em;
   -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-      -ms-border-radius: 4px;
-          border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
 }
 
 /* Footer */

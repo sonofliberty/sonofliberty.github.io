@@ -1,3 +1,38 @@
 /*- Custom style -*/
 
 // -- Put custom style under this point -- //
+
+$sonofliberty-green: #59a448;
+
+a {
+  color: $sonofliberty-green;
+}
+
+#wrap {
+  min-height: 640px;
+}
+
+#header {
+  .h1 {
+    font-family: 'Signika', sans-serif; //Emerald logo font
+    font-weight: 600;
+  }
+  #social {
+    li {
+      display:inline;
+      a {
+        color: $sonofliberty-green;
+      }
+    }
+  }
+}
+
+#footer {
+  margin-top: 80px;
+  color: $sonofliberty-green;
+  background-color: $background-color;
+}
+
+.github-corner {
+  fill: $sonofliberty-green;
+}

@@ -1,11 +1,9 @@
 ---
 layout:             page
-title:              My projects
+title:              Projects
+description:        Shameless self promotion
 permalink:          /projects
 ---
-
-Projects
-====================
 
 This is a collection of my previous work. It's probably not complete but I will update it from time to time.
 

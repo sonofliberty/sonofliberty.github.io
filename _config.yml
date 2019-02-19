@@ -1,6 +1,8 @@
 # Site settings
 title: Alex Winter
+tag_line: Symfony / PHP web developer
 description: A minimal personal site
+locale: en
 url: https://alexwinter.me
 github_url: https://github.com/sonofliberty/sonofliberty.github.io
 author:
@@ -10,7 +12,7 @@ author:
 social:
   github: sonofliberty
   linkedin: alexwinter89
-  facebook: aleksander.winter.790
+  #facebook: aleksander.winter.790
   email: hi@alexwinter.me
 
 # Build settings
@@ -18,7 +20,7 @@ baseurl: /
 markdown: kramdown
 source: .
 destination: ./_site
-permalink: /:year/:title
+permalink: /:categories/:slug
 paginate: 8
 paginate_path: /page:num/
 

@@ -4,7 +4,6 @@
             <span class="h4">{{ site.title }}</span><br>
             <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
         </p>
-
         <ul id="social">
             {% if site.social.github %}
                 <li>
@@ -27,7 +26,6 @@
                 </li>
             {% endif %}
         </ul>
-
         <small>@ {{ 'now' | date: "%Y" }} {{ site.author.name }}</small>
     </div>
 </footer>

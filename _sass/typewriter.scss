@@ -9,11 +9,11 @@
   overflow: hidden;
   animation: typing 1s steps(9, end), blink .75s step-end infinite;
   white-space: nowrap;
-  border-right: 12px solid $dark;
+  border-right: 10px solid $dark;
   box-sizing: border-box;
 
   &.text-short {
-    animation: typing 1s steps(10, end), blink .75s step-end infinite;
+    animation: typing 0.7s steps(7, end), blink .75s step-end infinite;
   }
   &.text-medium {
      animation: typing 1.5s steps(15, end), blink .75s step-end infinite;

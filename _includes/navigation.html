@@ -2,7 +2,7 @@
 
     <code class="font-italic text-muted d-none d-md-block">
         /**<br>
-        * <strong>@var</strong> AwesomeDeveloper<br>
+        * {{ site.description }}<br>
         */
     </code>
     <a class="navbar-brand hvr-icon-grow" href="{{ "/"|relative_url }}">
@@ -19,10 +19,12 @@
             {% for item in site.pages %}
                 {% if item.title %}
                     {% unless item.exclude_from_nav %}
-                        <li class="nav-item hvr-forward pl-md-2 {% if item.url == page.url %}active{% endif %}">
+                        <li class="nav-item hvr-forward pl-md-4 {% if item.url == page.url %}active{% endif %}">
                             <a class="nav-link" href="{{ item.url }}">
                                 <span class="d-none d-md-inline-block">public</span>
-                                <span class="text-light">${{ item.title|downcase|replace:' ','_' }};</span>
+                                <span class="text-light">
+                                    <span class="d-none d-md-inline">$</span>{{ item.title|downcase|replace:' ','_' }}</span><span class="d-none d-md-inline">;
+                                </span>
                             </a>
                         </li>
                     {% endunless %}
@@ -32,7 +34,7 @@
         </ul>
     </div>
 
-    <div class="vcard collapse navbar-collapse text-white text-center p-2" id="nav-2">
+    <div class="vcard collapse navbar-collapse text-white p-3" id="nav-2">
         {% include vcard.html %}
     </div>
 

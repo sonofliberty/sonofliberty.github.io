@@ -2,43 +2,43 @@
 layout: default
 ---
 
-<div class="typewriter text-muted mb-5">
-    <div class="display-1">Hi,</div>
-    <h1 class="typewriter-text display-4 text-short">I am Alex.</h1>
-</div>
+<section id="index">
 
-{% for post in paginator.posts %}
-    <div class="mb-5">
-        <h2 class="mb-0">
-            <a
-                    href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"
-                    class="hvr-underline-from-left"
-                    title="{{ post.title }}"
-            >
-                {{ post.title }}
-            </a>
-        </h2>
-        <time datetime="{{ post.date|date_to_xmlschema }}" class="small">
-            <code class="text-muted font-italic">// {{ post.date|date:"%Y-%m-%d" }}</code>
-        </time>
-        <p>{{ post.content|truncatewords:50 }}</p>
+    <div id="intro" class="typewriter display-4 text-muted mb-5">
+        Hi,<br>
+        <h1 class="typewriter-text display-4 text-short">I'm Alex.</h1>
     </div>
-{% endfor %}
 
-{% if paginator.total_pages > 1 %}
-    <div class="pagination mt-5 text-muted">
-        {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path }}" class="previous">
-                <i class="fas fa-angle-double-left fa-fw"></i>
-            </a>
-        {% endif %}
-        <span class="page_number">
-            Page {{ paginator.page }} of {{ paginator.total_pages }}
-        </span>
-        {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path }}" class="next">
-                <i class="fas fa-angle-double-right fa-fw"></i>
-            </a>
-        {% endif %}
-    </div>
-{% endif %}
+    {% for post in paginator.posts %}
+        <div class="mb-5">
+            <h2 class="mb-0">
+                <a href="{{ post.url|relative_url }}" title="{{ post.title }}">
+                    {{ post.title }}
+                </a>
+            </h2>
+            <time datetime="{{ post.date|date_to_xmlschema }}" class="small">
+                <code class="text-muted font-italic">// {{ post.date|date:"%Y-%m-%d" }}</code>
+            </time>
+            <p>{{ post.content|truncatewords:50 }}</p>
+        </div>
+    {% endfor %}
+
+    {% if paginator.total_pages > 1 %}
+        <div class="pagination mt-5 text-muted">
+            {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path }}" class="previous">
+                    <i class="fas fa-angle-double-left fa-fw"></i>
+                </a>
+            {% endif %}
+            <span class="page_number">
+                Page {{ paginator.page }} of {{ paginator.total_pages }}
+            </span>
+            {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path }}" class="next">
+                    <i class="fas fa-angle-double-right fa-fw"></i>
+                </a>
+            {% endif %}
+        </div>
+    {% endif %}
+
+</section>

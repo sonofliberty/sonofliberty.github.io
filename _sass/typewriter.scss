@@ -1,0 +1,42 @@
+.typewriter {
+  display: inline-block;
+  font-family: Courier, monospace;
+}
+
+.typewriter-text {
+  padding-right: 0.4em;
+  display: inline-block;
+  overflow: hidden;
+  animation: typing 1s steps(9, end), blink .75s step-end infinite;
+  white-space: nowrap;
+  border-right: 12px solid $dark;
+  box-sizing: border-box;
+
+  &.text-short {
+    animation: typing 1s steps(10, end), blink .75s step-end infinite;
+  }
+  &.text-medium {
+     animation: typing 1.5s steps(15, end), blink .75s step-end infinite;
+  }
+  &.text-long {
+    animation: typing 2s steps(20, end), blink .75s step-end infinite;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0%
+  }
+  to {
+    width: 100%
+  }
+}
+
+@keyframes blink {
+  from, to {
+    border-color: transparent
+  }
+  50% {
+    border-color: $dark;
+  }
+}

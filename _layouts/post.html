@@ -1,9 +1,15 @@
 ---
 layout: default
 ---
-<article id="post-page">
-    <div class="content">
-        {{ content }}
+
+{% if page.date %}
+    <div class="mb-3">
+        <time datetime="{{ page.date|date_to_xmlschema }}">
+            <code class="text-muted font-italic">// {{ page.date|date:"%Y-%m-%d" }}</code>
+        </time>
     </div>
-</article>
+{% endif %}
+
+{{ content }}
+
 

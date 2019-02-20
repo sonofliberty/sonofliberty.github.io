@@ -1,11 +1,13 @@
 section#skills {
-  i {
-    color: $main-color-bright;
-  }
-  #languages {
-    img {
-      margin-right: 5px;
-      height: 0.9em;
+  ul {
+    li {
+      i {
+        color: $success;
+      }
+      img.flag {
+        height: 1.1em;
+        display: inline;
+      }
     }
   }
 }

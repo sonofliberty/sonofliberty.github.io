@@ -9,6 +9,38 @@ author:
   name: Aleksander Winter
   email: hi@alexwinter.me
   url: sonofliberty.github.io
+  pgp_key: |
+    -----BEGIN PGP PUBLIC KEY BLOCK-----
+
+    mQENBFvu18EBCADYiYFf6oYUz2BPVHpAsI/XKwHlznJByYbf1AqbQHDAmtYCihmV
+    f1Oh76fTVumjDBlORc31+sGGwsczaqgLT1UptLECyym45uHe/3YgpoekWKcznOB5
+    8LgRTFnwd2hIScU5PKYqhc02jgUWT+MktAmMKWCxVXDYAT0mt4PunTaGEk3TuIic
+    cXxoO+2vngRm6FU4JCqvfR9pxR1K+ENdWrixZ14SnzsiDCdeoR0khMNJfJwszcGj
+    8sHTEIutivrMsGUdMsZ5d1Hl2VaZIZ2C4/8cHAOsLzgw/Xs46VJzyh/cYpVYgC65
+    GHec+L7K5jXKuwfl23K6bY3Y2ON9R2NwV6MvABEBAAG0LEFsZXggV2ludGVyIDxh
+    bGVrc2FuZGVyLndpbnRlci44OUBnbWFpbC5jb20+iQFUBBMBCAA+FiEEFm1PWLIl
+    azOSxf7cZaUN2FE3akAFAlvu18ICGwMFCQHhM4AFCwkIBwIGFQoJCAsCBBYCAwEC
+    HgECF4AACgkQZaUN2FE3akCt9wf/SLzTg6wFZnXYZ95QbqHCrEzAgRMIguwc7S8c
+    lywHiSNmtrXonRDeaVcHohYyk8ypfnxGhm302+wIRmP8y2BrsyyVfqGUJX7ArU3I
+    i4qqkaOtC9QaJ+piJXUNgy52D2kajvet5xepkl0ARm3PSJd4D1LIq2cPTukFd/rm
+    zfFKYyb/CZNp/Uq8zLmjo5xuBaTSUf2sB1LArWuSVv3A3xknKnT2ha9KN84Tbap7
+    XSUyyeqeDXq4AUzaaecwV4IWn55bpMOvNGLXLrCAvolUzqgOlvOG0pgUJRMl6lnV
+    oOWLM5jzYN9238APOVpCXqQKNJLpvYp6+2AMkKNbBIKwk4Jtp7kBDQRb7tfCAQgA
+    u1frREwOX7XVvkgOYlN7Df/9l5BVEOJ43lcVM64FyiqP1I4dOYmN5SW/G3QrHS/w
+    v4PdQFDh4WVy3vixlbaU3fmkPd1iON2u3dygVgq322+hsEA1b2vGgxlW2Vh7gHsH
+    OK4OvS5r3fZJVrvRMcxxQTzdjnJ1k9Q1wjCOrYjNoT83kGxr/sdacR02Lje0QjK5
+    TNOgd7zlrIqC8b/4rv4xttWpMyH7GQR4gj80DRD3Zpu93sPC5UA0lDI6S5KVBlKA
+    eBq4GOjeeQz/pS0ZIm3YTdun5etGUHJMkdBraqzimvNeygFF3nhckK7kD6T0yU3U
+    oDDh8PbhiRdRo1/J/UxMDQARAQABiQE8BBgBCAAmFiEEFm1PWLIlazOSxf7cZaUN
+    2FE3akAFAlvu18ICGwwFCQHhM4AACgkQZaUN2FE3akDAOwf+NLXnUqeZeC3qu9xo
+    e5tuDdswi4zzdk9rXICOtAs/tXKQuxpjLkfnUsMRu/EM7dbUgDenL21SaVFkd6im
+    1/anC6jTmZKB13JjjQ9DBcT8PV9NNuNismhV/qM5EViQEoMO3UlUVqlK5/XT6i/9
+    OUss4ynomWT5k70Vwubotuem4arlnkXgmBejoWI0sHDbL8CtWIYN9eG/2zjnwwFI
+    YtlVEtJlIEQp+lSaJTP+O8QGa9c3Pf5OZEVH0sv9SjL2NRCYbvv723z6XdZcIqWB
+    uszFoEd7S0ZQnaSqnaINvcghZOBAEnxQkxRnb8F2zafPP3553x1oPtfpSQ47LMbB
+    AZPtsw==
+    =f1IN
+    -----END PGP PUBLIC KEY BLOCK-----
 social:
   github: sonofliberty
   linkedin: alexwinter89
@@ -23,6 +55,16 @@ destination: ./_site
 permalink: /:categories/:slug
 paginate: 8
 paginate_path: /page:num/
+exclude:
+  - .idea
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - license.txt
+  - package-lock.json
+  - readme.md
+include:
+  - node_modules/*/dist
 
 # Default values
 defaults:

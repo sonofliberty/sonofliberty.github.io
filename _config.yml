@@ -58,12 +58,14 @@ paginate: 8
 paginate_path: /page:num/
 exclude:
   - .idea
+  - .push
   - CNAME
   - Gemfile
   - Gemfile.lock
   - license.txt
   - package-lock.json
   - readme.md
+  - screenshot.png
 include:
   - node_modules/*/dist
 

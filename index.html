@@ -19,7 +19,7 @@ layout: default
             <time datetime="{{ post.date|date_to_xmlschema }}" class="small">
                 <code class="text-muted font-italic">// {{ post.date|date:"%Y-%m-%d" }}</code>
             </time>
-            <p>{{ post.content|truncatewords:50 }}</p>
+            <p>{{ post.content }}</p>
         </div>
     {% endfor %}
 

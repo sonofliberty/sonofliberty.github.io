@@ -1,11 +1,11 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-left pt-md-5">
+<nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-left pt-md-3">
 
     <code class="text-muted font-italic d-none d-md-block">
         /**<br>
         * {{ site.description }}<br>
         */
     </code>
-    <a class="navbar-brand hvr-icon-grow" href="{{ "/"|relative_url }}">
+    <a class="navbar-brand py-md-0" href="{{ "/"|relative_url }}">
         <strong>{{ site.title }}</strong>
     </a>
 
@@ -19,12 +19,14 @@
             {% for item in site.pages %}
                 {% if item.title %}
                     {% unless item.exclude_from_nav %}
-                        <li class="nav-item hvr-forward pl-md-4 {% if item.url == page.url %}active{% endif %}">
-                            <a class="nav-link" href="{{ item.url }}">
-                                <span class="d-none d-md-inline-block">public</span>
-                                <span class="text-highlight">
-                                    <span class="d-none d-md-inline">$</span>{{ item.title|downcase|replace:' ','_' }}<span class="d-none d-md-inline">;</span>
-                                </span>
+                        <li class="nav-item hvr-forward pl-md-3 {% if item.url == page.url %}active{% endif %}">
+                            <a class="nav-link py-md-0" href="{{ item.url }}">
+                                <div>
+                                    <span class="d-none d-md-inline-block">public</span>
+                                    <span class="text-highlight">
+                                        <span class="d-none d-md-inline">$</span>{{ item.title|downcase|replace:' ','_' }}<span class="d-none d-md-inline">;</span>
+                                    </span>
+                                </div>
                             </a>
                         </li>
                     {% endunless %}

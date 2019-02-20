@@ -9,7 +9,7 @@
   overflow: hidden;
   animation: typing 1s steps(9, end), blink .75s step-end infinite;
   white-space: nowrap;
-  border-right: 10px solid $dark;
+  border-right: 10px solid $highlight-color;
   box-sizing: border-box;
 
   &.text-short {
@@ -37,6 +37,6 @@
     border-color: transparent
   }
   50% {
-    border-color: $dark;
+    border-color: $highlight-color;
   }
 }

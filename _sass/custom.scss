@@ -1,21 +1,20 @@
 html, body {
-  color: $gray-700;
-  font-size: 1.05em;
+  font-size: 1.04rem;
 }
 
-a {
-  color: $gray-900;
-  font-weight: 900;
-
-  &:hover {
-    text-decoration: none;
-    color: lighten($gray-900, 10);
-  }
+a:hover {
+  text-decoration: none;
 }
 
 #content {
   max-width: 840px;
-
+  a {
+    color: $highlight-color;
+    font-weight: 500;
+    &:hover {
+      color: darken($highlight-color, 10);
+    }
+  }
   img {
     max-width: 100%;
     display: block;
@@ -29,6 +28,10 @@ a {
 
 [class^="hvr-"]::before {
   background: $text-muted;
+}
+
+.text-highlight {
+  color: $highlight-color;
 }
 
 .github-corner {

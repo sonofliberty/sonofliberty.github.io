@@ -6,7 +6,7 @@ locale: en
 url: https://alexwinter.me
 github_url: https://github.com/sonofliberty/sonofliberty.github.io
 author:
-  name: Aleksander Winter
+  name: Alex Winter
   email: hi@alexwinter.me
   url: sonofliberty.github.io
   pgp_key: |
@@ -50,9 +50,10 @@ social:
 # Build settings
 baseurl: /
 markdown: kramdown
+highlighter: rouge
 source: .
 destination: ./_site
-permalink: /:categories/:slug
+permalink: /:categories/:title
 paginate: 8
 paginate_path: /page:num/
 exclude:

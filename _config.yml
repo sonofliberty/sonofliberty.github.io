@@ -5,10 +5,12 @@ description: A minimal personal site
 locale: en
 url: https://alexwinter.me
 github_url: https://github.com/sonofliberty/sonofliberty.github.io
+
+# Author info
 author:
   name: Alex Winter
   email: hi@alexwinter.me
-  url: sonofliberty.github.io
+  url: alexwinter.me
   pgp_key: |
     -----BEGIN PGP PUBLIC KEY BLOCK-----
 
@@ -74,19 +76,11 @@ defaults:
   -
     scope:
       path: ""
-      type: "posts"
+      type: posts
     values:
-      layout: "post"
+      layout: post
       og_type: article
 
 # Plugins
 plugins:
   - jekyll-paginate
-
-# Custom variables
-version: "1.1.0"
-
-# Options
-custom_header: true
-custom_nav_footer: true
-reverse: false

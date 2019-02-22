@@ -1,7 +1,8 @@
 ---
-layout:     post
-title:      Hello world
-date:       2019-02-20 20:00:00 +0700
+layout:         post
+title:          Hello world
+description:    My first post
+date:           2019-02-20 20:00:00 +0700
 ---
 
 Welcome to my personal site. 

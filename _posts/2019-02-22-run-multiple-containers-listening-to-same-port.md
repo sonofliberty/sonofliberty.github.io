@@ -1,8 +1,10 @@
 ---
-layout:     post
-title:      How to run multiple docker containers listening to the same port
-date:       2019-02-22 13:00:00 +0700
-categories: [docker]
+layout:         post
+title:          How to run multiple docker containers listening to the same port
+description:    Let's say you need to run multiple dockerized web servers on the same machine. Obviously you could just use a separate 
+                port for each one, but we want to work with hostnames instead.
+date:           2019-02-22 13:00:00 +0700
+categories:     [docker]
 ---
 
 Let's say you need to run multiple dockerized web servers on the same machine. Obviously you could just use a separate 

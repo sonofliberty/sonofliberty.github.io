@@ -2,6 +2,11 @@ html, body {
   font-size: 1.04rem;
 }
 
+blockquote {
+  font-style: italic;
+  color: $text-muted;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -32,6 +37,10 @@ a:hover {
 
 .text-highlight {
   color: $highlight-color;
+}
+
+.text-yellow {
+  color: $yellow;
 }
 
 .github-corner {

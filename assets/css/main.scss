@@ -2,7 +2,7 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
-//Bootstrap
+// Bootstrap
 @import "variables";
 @import "bootstrap/bootstrap";
 @import "bootswatch";
@@ -15,5 +15,8 @@
 @import "code-highlight";
 @import "sidebar";
 @import "typewriter";
+
+// Pages
 @import "index";
 @import "skills";
+@import "experience";

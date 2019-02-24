@@ -19,7 +19,10 @@ layout: default
             <time datetime="{{ post.date|date_to_xmlschema }}" class="small">
                 <code class="text-muted font-italic">// {{ post.date|date:"%Y-%m-%d" }}</code>
             </time>
-            <p>{{ post.content }}</p>
+            <p>
+                {{ post.excerpt }}
+                <a href="{{ post.url|relative_url }}" title="{{ post.title }}">Continue reading <i class="fas fa-angle-double-right"></i></a>
+            </p>
         </div>
     {% endfor %}
 

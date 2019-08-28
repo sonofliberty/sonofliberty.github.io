@@ -5,6 +5,7 @@ description: A minimal personal site
 locale: en
 url: https://alexwinter.me
 github_url: https://github.com/sonofliberty/sonofliberty.github.io
+encoding: utf-8
 
 # Author info
 author:

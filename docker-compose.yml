@@ -3,7 +3,7 @@ version: '3'
 services:
 
   alexwinter.me:
-    image: jekyll/jekyll:3.7.3
+    image: jekyll/jekyll:3.8
     volumes:
       - ./:/srv/jekyll
     command: jekyll serve

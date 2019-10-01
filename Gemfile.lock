@@ -244,10 +244,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll (~> 3.8)
-  jekyll-feed
-  jekyll-paginate
-  rouge
+  jekyll-seo-tag
 
 BUNDLED WITH
    1.16.1

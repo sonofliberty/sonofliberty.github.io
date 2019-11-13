@@ -12,9 +12,15 @@
 <ul class="list-inline mb-0">
     {% if site.social.github %}
         <li class="list-inline-item">
+            <a href="https://github.com/{{ site.social.twitter }}" class="hvr-icon-push" target="_blank">
+                <i class="fab fa-twitter-square fa-fw hvr-icon"></i>
+            </a>
+        </li>
+    {% endif %}
+    {% if site.social.twitter %}
+        <li class="list-inline-item">
             <a href="https://github.com/{{ site.social.github }}" class="hvr-icon-push" target="_blank">
                 <i class="fab fa-github-square fa-fw hvr-icon"></i>
-                Follow
             </a>
         </li>
     {% endif %}
@@ -22,7 +28,6 @@
         <li class="list-inline-item">
             <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" class="hvr-icon-push" target="_blank">
                 <i class="fab fa-linkedin fa-fw hvr-icon"></i>
-                Connect
             </a>
         </li>
     {% endif %}
@@ -30,7 +35,6 @@
         <li class="list-inline-item">
             <a href="https://www.facebook.com/{{ site.social.facebook }}" class="hvr-icon-push" target="_blank">
                 <i class="fab fa-facebook-square fa-fw hvr-icon"></i>
-                Be my friend
             </a>
         </li>
     {% endif %}
@@ -38,7 +42,6 @@
         <li class="list-inline-item">
             <a href="mailto:{{ site.social.email }}" class="hvr-icon-push">
                 <i class="fas fa-envelope-square fa-fw hvr-icon"></i>
-                Say hi
             </a>
         </li>
     {% endif %}

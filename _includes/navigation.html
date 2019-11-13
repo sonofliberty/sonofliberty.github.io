@@ -14,7 +14,7 @@
     </button>
 
     <div class="collapse navbar-collapse" id="nav-1">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav bg-primary">
             <li class="nav-item text-light d-none d-md-block">{</li>
             {% for item in site.pages %}
                 {% if item.title %}
@@ -33,14 +33,14 @@
                 {% endif %}
             {% endfor %}
             <li class="nav-item text-light d-none d-md-block">}</li>
-            <li class="nav-item mt-5 d-none d-md-block text-center">
-                <iframe src="https://donatebutton.cash/e?a=qpcu9xfm2sy07g6dxrxfknmatyw536qrjy02ff63gt" width='150' height='150' style='border:none;overflow:hidden;'></iframe>
-            </li>
         </ul>
     </div>
 
-    <div class="vcard text-center collapse navbar-collapse text-white p-3" id="nav-2">
-        {% include vcard.html %}
-    </div>
+    {% if site.social.twitter %}
+        <div class="vcard collapse navbar-collapse p-3" id="nav-2">
+            <a class="twitter-timeline" data-height="256" data-dnt="true" data-theme="dark" data-link-color="#79A636" href="https://twitter.com/realAlexWinter?ref_src=twsrc%5Etfw"></a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    {% endif %}
 
 </nav>
